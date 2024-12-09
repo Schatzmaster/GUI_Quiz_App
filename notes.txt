@@ -1,0 +1,35 @@
+Some characters are reserved in HTML.
+
+If you use the less than (<) or greater than (>) signs in your HTML text, the browser might mix them with tags.
+
+Entity names or entity numbers can be used to display reserved HTML characters.
+
+To display a less than sign (<) we must write &lt or &#60.
+
+In Python there is the html module that I can use to escape the html characters.
+
+Datatyping:
+
+Instead of creating variables like a = 12 I can also declare the data type
+of variable with a: int. And leave like that. If I declare the var later on
+it has to be an int.
+
+I can also specify a datatype inside a function.
+
+def police_check(age: int):
+    if age > 18:
+        can_drive = True
+    else:
+        can_drive = False
+    return can_drive
+
+In addition, I can also specify the output data type:
+
+def police_check(age: int) -> bool:
+    if age > 18:
+        can_drive = True
+    else:
+        can_drive = False
+    return can_drive
+
+This is called 'Type Hints'.
